@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import ConfettiAnimation from '../components/ConfettiAnimation.vue';
 const dice = ref(null)
 const maxPoint = ref(100)
 const playing = ref(true)
@@ -49,6 +50,7 @@ const switchPlayer = () => {
 </script>
 
 <template>
+  <div class="relative">
   <div class="font-['Nunito'] text-[#333] h-screen flex justify-center items-center bg-gradient-to-tl from-[#753682] to-[#20901a]">
     <main class="relative flex w-[90%] h-[90%] bg-black/40 backdrop-blur-md shadow-lg rounded-xl overflow-hidden">
       <section
@@ -88,6 +90,8 @@ const switchPlayer = () => {
       </div>
     </main>
   </div>
+  <ConfettiAnimation v-if="!playing" />
+</div>
 </template>
 
 <style scoped>
