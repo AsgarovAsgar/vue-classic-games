@@ -24,8 +24,6 @@ const rollDice = () => {
 const holdDice = () => {
   if(!playing.value) return
   activePlayer.value === 0 ? player1Score.value += currentScore.value : player2Score.value += currentScore.value
-  console.log(activePlayer.value);
-  console.log(player1Score.value);
 
   if(player1Score.value >= maxPoint.value || player2Score.value >= maxPoint.value) {
     player1Score.value >= maxPoint.value ? winnerPlayer.value = 0 : winnerPlayer.value = 1
