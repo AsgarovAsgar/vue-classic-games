@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/tic-tac-toe',
       name: 'tic-tac-toe',
       component: () => import('@/views/TicTacToeView.vue')
+    },
+    {
+      path: '/dice',
+      name: 'dice',
+      component: () => import('@/views/DiceView.vue')
     }
   ]
 })
