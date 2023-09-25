@@ -26,6 +26,11 @@ const router = createRouter({
       path: '/dice',
       name: 'dice',
       component: () => import('@/views/DiceView.vue')
+    },
+    {
+      path: '/guess-number',
+      name: 'guess-number',
+      component: () => import('@/views/GuessNumber.vue')
     }
   ]
 })
