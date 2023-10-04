@@ -23,5 +23,9 @@ const links = [
     name: 'dice',
     title: 'Dice'
   },
+  {
+    name: 'guess-number',
+    title: 'Guess Number'
+  },
 ]
 </script>
